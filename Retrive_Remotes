@@ -1,4 +1,6 @@
-getgenv().remotes = {}
+if not remote then
+	getgenv().remotes = {}
+end
 
 for i, v in pairs(game.Players.LocalPlayer.PlayerGui.client.client:GetChildren()) do
     if i == 2 then
