@@ -1,4 +1,4 @@
-if not remote then
+if not remotes then
 	getgenv().remotes = {}
 end
 
