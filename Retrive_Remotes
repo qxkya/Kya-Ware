@@ -1,6 +1,11 @@
-if not remotes then
-	getgenv().remotes = {}
-end
+getgenv().remotes = {
+    meleeAI = game:GetService("ReplicatedStorage").remoteInterface.interactions.meleeAI,
+    take = game:GetService("ReplicatedStorage").remoteInterface.inventory.take,
+    pickupItem = game:GetService("ReplicatedStorage").remoteInterface.inventory.pickupItem,
+    plant = game:GetService("ReplicatedStorage").remoteInterface.interactions.plant,
+    harvest = game:GetService("ReplicatedStorage").remoteInterface.interactions.harvest,
+    eat = game:GetService("ReplicatedStorage").remoteInterface.interactions.eat
+}
 
 for i, v in pairs(game.Players.LocalPlayer.PlayerGui.client.client:GetChildren()) do
     if i == 2 then
