@@ -4,7 +4,9 @@ getgenv().remotes = {
     pickupItem = game:GetService("ReplicatedStorage").remoteInterface.inventory.pickupItem,
     plant = game:GetService("ReplicatedStorage").remoteInterface.interactions.plant,
     harvest = game:GetService("ReplicatedStorage").remoteInterface.interactions.harvest,
-    eat = game:GetService("ReplicatedStorage").remoteInterface.interactions.eat
+    eat = game:GetService("ReplicatedStorage").remoteInterface.interactions.eat,
+    build = game:GetService("ReplicatedStorage").remoteInterface.interactions.build,
+    deleteStructure = game:GetService("ReplicatedStorage").remoteInterface.interactions.deleteStructure
 }
 
 for i, v in pairs(game.Players.LocalPlayer.PlayerGui.client.client:GetChildren()) do
