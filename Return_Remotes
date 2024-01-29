@@ -89,7 +89,7 @@ for i, v in pairs(getgc(true)) do
 
 						table.remove(shallowTable,  table.find(shallowTable, v2))
 
-						getgenv().remotes[tostring(remote)] = shallowTable
+						remotes[tostring(remote)] = shallowTable
 					end
 				end
 			end
