@@ -1,15 +1,10 @@
-return {
-    {
+return [[{
+    "1": {
         "Id": "Wooden Rod",
-        "Amount": 1000
+        "Amount": 1499
     },
-    {
+    "2": {
         "Id": "Hide",
-        "Amount": 1000
-    },
-    {
-        "Id": 55,
-        "Amount": 999
-    },
-    111
-}
+        "Amount": 1499
+    }
+}]], 100
