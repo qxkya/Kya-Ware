@@ -1,4 +1,4 @@
-return [[{
+{
     {
         "Id": "Wooden Rod",
         "Amount": 1000
@@ -12,4 +12,4 @@ return [[{
         "Amount": 999
     },
     111
-}]]
+}
