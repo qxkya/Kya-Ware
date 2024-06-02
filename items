@@ -1,6 +1,6 @@
 return {
     {
         Id = "Large Pelt",
-        Amount = 1499
+        Amount = 2999
     }
 }, "Half Wood"
