@@ -1,6 +1,6 @@
-return [[{
-    "1": {
-        "Id": "Large Pelt",
-        "Amount": 1499
+return {
+    {
+        Id = "Large Pelt",
+        Amount = 1499
     }
-}]], "Half Wood"
+}, "Half Wood"
