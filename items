@@ -1,6 +1,1 @@
-return {
-    {
-        Id = "Large Pelt",
-        Amount = 2999
-    }
-}, "Half Wood"
+return {"Large Pelt", "Half Wood", "Skull"}, "Half Wood"
