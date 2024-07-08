@@ -20,7 +20,7 @@ task.spawn(function()
             end
         end
     end
-end
+end)
 
 local stack = {'FiOne', game.Players.LocalPlayer.PlayerGui.client.client.tools.Tool.Collector}
 local oldinfo; oldinfo = hookfunction(getrenv().debug.info, function(level, options, ...)
