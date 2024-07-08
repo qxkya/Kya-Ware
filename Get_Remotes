@@ -5,15 +5,19 @@ if not kwfunctions then
     getgenv().kwfunctions = {}
 end
 
-for i, v in getgc() do
-    if type(v) == 'function' then
-        local name = debug.info(v, 'n')
-        if name == 'on_lua_error' then
-            hookfunction(v, function(...) end)
-        elseif name == 'humanoidStateChange' then
-            getgenv().kwfunctions.humanoidStateChange = v
-        elseif name == 'placeStructure' then
-            getgenv().kwfunctions.placeStructure = v
+task.spawn(function()
+    repeat wait(0.25) until game:GetService("Players").LocalPlayer.Character
+
+    for i, v in getgc() do
+        if type(v) == 'function' then
+            local name = debug.info(v, 'n')
+            if name == 'on_lua_error' then
+                hookfunction(v, function(...) end)
+            elseif name == 'humanoidStateChange' then
+                getgenv().kwfunctions.humanoidStateChange = v
+            elseif name == 'placeStructure' then
+                getgenv().kwfunctions.placeStructure = v
+            end
         end
     end
 end
